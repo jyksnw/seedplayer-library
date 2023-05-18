@@ -1,4 +1,7 @@
 # -*- mode: python ; coding: utf-8 -*-
+import os
+from pathlib import Path
+import nicegui
 
 
 block_cipher = None
@@ -8,7 +11,7 @@ a = Analysis(
     ['main.py'],
     pathex=[],
     binaries=[],
-    datas=[('D:\\Personal Projects\\SeedPlayerLibrary\\SeedPlayerExport\\.venv\\Lib\\site-packages\\nicegui', 'nicegui')],
+    datas=[(f'{Path(nicegui.__file__).parent}{os.pathsep}nicegui', 'nicegui')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
