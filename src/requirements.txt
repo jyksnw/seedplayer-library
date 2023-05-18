@@ -1,0 +1,6 @@
+nicegui
+psutil
+pyinstaller
+setuptools; sys_platform == 'linux'
+pycairo; sys_platform == 'linux'
+PyGObject; sys_platform == 'linux'
